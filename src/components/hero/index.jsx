@@ -3,7 +3,7 @@ import styles from "./hero.module.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mb-4">
       <h1 className="text-center text-2xl md:text-4xl font-bold">
         We will make your token go viral 🚀
       </h1>
