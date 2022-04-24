@@ -20,11 +20,11 @@ const Navbar = () => {
     <nav>
       <div className="logo menu-item-without text-2xl">Altdeck</div>
       <div id="menu" className="flex w-[430px]">
-        <div className="menu-item-without">Clients</div>
-
         <div className="menu-item highlight">
           <div className="menu-text">
-            <a href="#">Services</a>
+            <a href="#">
+              Services <i className="fas fa-chevron-down"></i>
+            </a>
           </div>
           <div className="sub-menu double">
             <SingleItem />
@@ -50,6 +50,7 @@ const Navbar = () => {
             <div className="sub-menu-holder"></div>
           </div>
         </div>
+        <div className="menu-item-without">Clients</div>
 
         <div id="sub-menu-container">
           <div id="sub-menu-holder">
