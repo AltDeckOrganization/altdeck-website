@@ -3,7 +3,7 @@ import React from "react";
 const Clients = () => {
   return (
     <div className="bg-[#4E944F] rounded-xl text-center px-4 py-8">
-      <h2 className="text-xl md:text-2xl font-semibold py-2 text-white">
+      <h2 className="text-2xl md:text-3xl font-semibold py-2 text-white">
         Our Trusted Clients
       </h2>
       <p className="text-md: md:text-lg">
