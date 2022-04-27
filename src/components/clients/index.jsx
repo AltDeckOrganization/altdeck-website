@@ -1,6 +1,9 @@
 import React from "react";
+import { imageUrlBuilding } from "../../utils/imgBuilder";
+import SanityConnection from "../../utils/sanityConnection";
 
 const Clients = () => {
+  const data = SanityConnection("partners");
   return (
     <div className="bg-[#4E944F] rounded-xl text-center px-4 py-8">
       <h2 className="text-2xl md:text-3xl font-semibold py-2 text-white">
@@ -11,31 +14,14 @@ const Clients = () => {
         to the moon.
       </p>
       <div className="flex items-center justify-evenly mt-8 flex-col md:flex-row">
-        <img
-          src="https://www.degen.marketing/img/logos/logo-client-babydogecoin.png"
-          alt=""
-          className="mt-4"
-        />
-        <img
-          src="https://www.degen.marketing/img/logos/logo-client-babydogecoin.png"
-          alt=""
-          className="mt-4"
-        />
-        <img
-          src="https://www.degen.marketing/img/logos/logo-client-babydogecoin.png"
-          alt=""
-          className="mt-4"
-        />
-        <img
-          src="https://www.degen.marketing/img/logos/logo-client-babydogecoin.png"
-          alt=""
-          className="mt-4"
-        />
-        <img
-          src="https://www.degen.marketing/img/logos/logo-client-babydogecoin.png"
-          alt=""
-          className="mt-4"
-        />
+        {data.map((item) => (
+          <img
+            src={imageUrlBuilding(item.mainImage)}
+            alt={item.name}
+            key={item._id}
+            className="mt-4 max-w-20 max-h-12"
+          />
+        ))}
       </div>
     </div>
   );
