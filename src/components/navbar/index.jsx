@@ -18,7 +18,11 @@ const SingleItem = () => (
 const Navbar = () => {
   return (
     <nav>
-      <div className="logo menu-item-without text-2xl">Altdeck</div>
+      <Link href={"/"}>
+        <div className="logo menu-item-without text-2xl cursor-pointer">
+          Altdeck
+        </div>
+      </Link>
       <div id="menu" className="flex w-[430px]">
         <div className="menu-item highlight">
           <div className="menu-text">
