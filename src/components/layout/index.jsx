@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className="text-white">
       <Nav />
-      <main className="xl:w-[1156px] xl:mx-auto lg:px-20 w-full px-4 pt-20 md:pt-28">
+      <main className="px-5 md:px-0 xl:w-[1156px] xl:mx-auto lg:px-28 xl:px-0 w-full pt-24">
         {children}
       </main>
       <Footer />

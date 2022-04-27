@@ -94,7 +94,7 @@ nav .menu-item:hover ~ #sub-menu-container #sub-menu-holder {
 }
 .menu-item .sub-menu {
   position: absolute;
-  top: 5em;
+  top: 4.5em;
   color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   min-width: 500px;
@@ -108,6 +108,7 @@ nav .menu-item:hover ~ #sub-menu-container #sub-menu-holder {
   padding: 1.5em;
   transition: all 0.25s ease-out, opacity 0.25s ease-in,
     margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+  left: -175px;
 }
 
 .menu-item .sub-menu.double {
@@ -340,7 +341,7 @@ nav
     left: 0;
   }
   .menu-item .sub-menu.double {
-    min-width: 90vw;
+    min-width: 100vw;
     right: 00px;
     left: 0;
   }
