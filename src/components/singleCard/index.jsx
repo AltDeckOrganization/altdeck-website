@@ -3,9 +3,9 @@ import Link from "next/link";
 import styles from "./singleCard.module.css";
 import { imageUrlBuilding } from "../../utils/imgBuilder";
 
-const SingleCard = ({ data }) => {
+const SingleCard = ({ data, heading }) => {
   return (
-    <Link href={`/services/${data.slug.current}`}>
+    <Link href={`/${heading}/${data.slug.current}`}>
       <div className={styles.a_box}>
         <div className={styles.img_container}>
           <div className={styles.img_inner}>
