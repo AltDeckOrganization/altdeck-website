@@ -12,7 +12,7 @@ const SingleService = () => {
   const data = SanityConnection(services);
   useEffect(() => {
     setSingleItemData(data.find((item) => item.slug.current === id));
-  }, [data]);
+  }, [data, id]);
   return (
     <div>
       {singleItemData && (
@@ -22,16 +22,18 @@ const SingleService = () => {
             <h1 className="text-2xl md:text-3xl font-bold">
               {singleItemData.heading}
             </h1>
-            <h4 className="text-lg md:text-xl my-4 font-light">$1440</h4>
+            <h4 className="text-lg md:text-xl my-4 font-light">$144</h4>
             <div className="text-gray-300">
               <SanityBlockContent blocks={singleItemData.body} />
             </div>
           </div>
-          <img
-            className="h-full object-contain rounded-xl"
-            // style={{ gridRow: 1 }}
-            src={imageUrlBuilding(singleItemData.mainImage)}
-          />
+          {singleItemData.mainImage && (
+            <img
+              className="h-full object-contain rounded-xl"
+              // style={{ gridRow: 1 }}
+              src={imageUrlBuilding(singleItemData.mainImage)}
+            />
+          )}
           <div className="mt-8 text-center">
             <p className="text-[#e9efc0]">
               We either respond instantly or within 8 hours!

@@ -10,10 +10,12 @@ const SanityConnection = (type) => {
       const result = await fetch(url).then((res) => res.json());
       setData(result.result);
     };
-    GetData();
-  }, []);
+    if (type !== undefined) {
+      GetData();
+    }
+  }, [type]);
 
-  return data;
+  if (data) return data;
 };
 
 export default SanityConnection;
