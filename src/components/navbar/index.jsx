@@ -51,7 +51,9 @@ const Navbar = () => {
             <div className="sub-menu-holder"></div>
           </div>
         </div>
-        <div className="menu-item-without">Clients</div>
+        <a href="#clients" className="menu-item-without">
+          Clients
+        </a>
 
         <div id="sub-menu-container">
           <div id="sub-menu-holder">

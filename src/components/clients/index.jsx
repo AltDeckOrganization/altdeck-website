@@ -5,7 +5,7 @@ import SanityConnection from "../../utils/sanityConnection";
 const Clients = () => {
   const data = SanityConnection("partners");
   return (
-    <div className="bg-[#4E944F] rounded-xl text-center px-4 py-8">
+    <div className="bg-[#4E944F] rounded-xl text-center px-4 py-8" id="clients">
       <h2 className="text-2xl md:text-3xl font-semibold py-2 text-white">
         Our Trusted Clients
       </h2>
