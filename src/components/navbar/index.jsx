@@ -1,18 +1,18 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
-const SingleItem = () => (
-  <div className="icon-box gb b">
+const SingleItem = ({ title, text, link }) => (
+  <a href={link} className="icon-box gb b">
     <div className="icon">
       <i className="far fa-users-class"></i>
     </div>
     <div className="text">
       <div className="title">
-        Teach <i className="far fa-arrow-right"></i>
+        {title} <i className="far fa-arrow-right"></i>
       </div>
-      <div className="sub-text">In Classroom</div>
+      <div className="sub-text">{text}</div>
     </div>
-  </div>
+  </a>
 );
 
 const Navbar = () => {
@@ -31,26 +31,23 @@ const Navbar = () => {
             </a>
           </div>
           <div className="sub-menu double">
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
-            <SingleItem />
+            <h3 className="mb-3">NFTS</h3>
+            <div></div>
+            <SingleItem link="#mass_targeting" title="Mass DMs" />
+            <SingleItem link="#celebrities" title="Campaigns" />
+            <SingleItem
+              link="#press_releases_articles"
+              title="Press Releases"
+            />
+            <SingleItem link="#billboards" title="BillBoards" />
+            <h3 className="mb-4">AltCoins</h3>
+            <div></div>
+            <SingleItem link="#mass_targeting" title="Mass DMs" />
+            <SingleItem link="#crypto_influencers" title="Influencers" />
+            <SingleItem link="#billboards" title="BillBoards" />
+            <SingleItem link="#listings" title="Listings" />
+            <SingleItem link="#trending" title="Trending" />
+            <SingleItem link="#press_releases_articles" title="Press Release" />
             <div className="sub-menu-holder"></div>
           </div>
         </div>
