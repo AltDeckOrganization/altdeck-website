@@ -22,7 +22,9 @@ const SingleService = () => {
             <h1 className="text-2xl md:text-3xl font-bold">
               {singleItemData.heading}
             </h1>
-            <h4 className="text-lg md:text-xl my-4 font-light">$144</h4>
+            <h4 className="text-lg md:text-xl my-4 font-light">
+              ${singleItemData.price}
+            </h4>
             <div className="text-gray-300">
               <SanityBlockContent blocks={singleItemData.body} />
             </div>
@@ -30,8 +32,8 @@ const SingleService = () => {
           {singleItemData.mainImage && (
             <img
               className="h-full object-contain rounded-xl"
-              // style={{ gridRow: 1 }}
               src={imageUrlBuilding(singleItemData.mainImage)}
+              alt={singleItemData.heading}
             />
           )}
           <div className="mt-8 text-center">

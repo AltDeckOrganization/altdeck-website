@@ -5,7 +5,20 @@ import SEO from "../components/SEO";
 import SingleService from "../components/singleService";
 import SanityConnection from "../utils/sanityConnection";
 
-const allServices = ["Listings"];
+const allServices = [
+  { heading: "Listings", search: "listings" },
+  { heading: "Billboards", search: "billboards" },
+  { heading: "Celebrities", search: "celebrities" },
+  { heading: "Chinese Marketing", search: "chinese_marketing" },
+  { heading: "Crypto Influencers", search: "crypto_influencers" },
+  { heading: "Mass Targeting", search: "mass_targeting" },
+  { heading: "Press Releases & Articles", search: "press_releases_articles" },
+  { heading: "Rappers", search: "rappers" },
+  { heading: "Sentiment Boost", search: "sentiment_boost" },
+  { heading: "Trending", search: "trending" },
+  { heading: "Verification", search: "verification" },
+  { heading: "Other", search: "other" },
+];
 
 const Home = () => {
   return (
@@ -17,7 +30,7 @@ const Home = () => {
         Our Services
       </h2>
       {allServices.map((item) => {
-        const data = SanityConnection(item.toLowerCase());
+        const data = SanityConnection(item.search);
         return <SingleService key={item} data={data} heading={item} />;
       })}
     </div>
