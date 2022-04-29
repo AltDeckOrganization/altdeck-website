@@ -34,7 +34,7 @@ const Navbar = () => {
             <h3 className="mb-3">NFTS</h3>
             <div></div>
             <SingleItem link="#mass_targeting" title="Mass DMs" />
-            <SingleItem link="#celebrities" title="Campaigns" />
+            <SingleItem link="#campaigns" title="Campaigns" />
             <SingleItem
               link="#press_releases_articles"
               title="Press Releases"
@@ -43,7 +43,7 @@ const Navbar = () => {
             <h3 className="mb-4">AltCoins</h3>
             <div></div>
             <SingleItem link="#mass_targeting" title="Mass DMs" />
-            <SingleItem link="#crypto_influencers" title="Influencers" />
+            <SingleItem link="#influencers" title="Influencers" />
             <SingleItem link="#billboards" title="BillBoards" />
             <SingleItem link="#listings" title="Listings" />
             <SingleItem link="#trending" title="Trending" />

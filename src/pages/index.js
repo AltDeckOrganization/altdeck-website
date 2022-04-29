@@ -8,15 +8,11 @@ import SanityConnection from "../utils/sanityConnection";
 const allServices = [
   { heading: "Listings", search: "listings" },
   { heading: "Billboards", search: "billboards" },
-  { heading: "Celebrities", search: "celebrities" },
-  { heading: "Chinese Marketing", search: "chinese_marketing" },
-  { heading: "Crypto Influencers", search: "crypto_influencers" },
+  { heading: "Influencers", search: "influencers" },
+  { heading: "Campaigns", search: "campaigns" },
   { heading: "Mass Targeting", search: "mass_targeting" },
   { heading: "Press Releases & Articles", search: "press_releases_articles" },
-  { heading: "Rappers", search: "rappers" },
-  { heading: "Sentiment Boost", search: "sentiment_boost" },
   { heading: "Trending", search: "trending" },
-  { heading: "Verification", search: "verification" },
   { heading: "Other", search: "other" },
 ];
 
