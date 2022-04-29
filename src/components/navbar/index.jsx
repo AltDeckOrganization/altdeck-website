@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import SanityConnection from "../../utils/sanityConnection";
 
 const SingleItem = ({ title, text, link }) => (
   <a href={link} className="icon-box gb b">

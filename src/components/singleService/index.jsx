@@ -1,7 +1,9 @@
 import React from "react";
+import SanityConnection from "../../utils/sanityConnection";
 import SingleCard from "../singleCard";
 
-const SingleService = ({ data, heading }) => {
+const SingleService = ({ heading }) => {
+  const data = SanityConnection(heading.search);
   return (
     <div className="mt-12">
       <h3 className="font-semibold text-xl md:text-2xl" id={heading.search}>

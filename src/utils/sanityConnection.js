@@ -8,7 +8,9 @@ const SanityConnection = (type) => {
       const url = `https://${process.env.sanityId}.api.sanity.io/v1/data/query/production?query=${query}`;
 
       const result = await fetch(url).then((res) => res.json());
-      setData(result.result);
+      setData(
+        result.result.sort((a, b) => parseFloat(a.order) - parseFloat(b.order))
+      );
     };
     if (type !== undefined) {
       GetData();
