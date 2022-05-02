@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav>
       <Link href={"/"}>
         <div className="logo menu-item-without text-2xl cursor-pointer">
-          Altdeck
+          AltDeck
         </div>
       </Link>
       <div id="menu" className="flex w-[430px]">
@@ -63,9 +63,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menu-item-without -z-10">
-        <button className="h-fit font-bold text-white bg-[#4E944F] py-4 px-4 rounded-xl">
-          Contact Us
-        </button>
+        <a href={"https://telegram.org/"} target={"_blank"} rel={"noreferrer"}>
+          <button className="h-fit font-bold text-white bg-[#4E944F] py-4 px-4 rounded-xl">
+            Contact Us
+          </button>
+        </a>
       </div>
     </nav>
   );

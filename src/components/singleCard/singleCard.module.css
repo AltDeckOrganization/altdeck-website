@@ -22,7 +22,7 @@
   height: 250px;
   margin: -35px 0px 0px 0;
   object-fit: contain;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .inner_skew {

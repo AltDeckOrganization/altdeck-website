@@ -46,8 +46,18 @@ const SingleService = () => {
               rel={"noreferrer"}
             >
               <button className="bg-[#4e944f] btn btn-block w-full py-4 mt-4 font-semibold text-lg md:text-xl rounded-xl">
-                <i className="fab fa-telegram font-normal mr-3 text-2xl"></i>
-                Contact on Telegram
+                <i className="fab fa-twitter font-normal mr-3 text-2xl"></i>
+                Contact on Twitter
+              </button>
+            </a>
+            <a
+              href={"https://telegram.org/"}
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <button className="bg-[#4e944f] btn btn-block w-full py-4 mt-4 font-semibold text-lg md:text-xl rounded-xl">
+                <i className="fa fa-envelope font-normal mr-3 text-2xl"></i>
+                Contact on Mail
               </button>
             </a>
           </div>
